@@ -29,9 +29,10 @@
     }
 
     .hero{
-      background:rgba(0,0,0,0.5);
-      padding:40px;
+      background:rgba(0,0,0,0.6);
+      padding:50px;
       border-radius:20px;
+      max-width:700px;
     }
 
     .hero h1{
@@ -52,34 +53,55 @@
       text-decoration:none;
       border-radius:10px;
       transition:0.3s;
+      font-weight:bold;
     }
 
     .btn:hover{
       background:#246b45;
+      transform:scale(1.05);
     }
 
     section{
       padding:80px 10%;
     }
 
+    section h2{
+      text-align:center;
+      margin-bottom:40px;
+      color:#2e8b57;
+      font-size:40px;
+    }
+
     .cards{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      margin-top:40px;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
     }
 
     .card{
       background:white;
       padding:30px;
-      border-radius:15px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.1);
-      text-align:center;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card a{
+      text-decoration:none;
+      color:#2e8b57;
     }
 
     .card h3{
       margin-bottom:15px;
-      color:#2e8b57;
+      font-size:24px;
+    }
+
+    .card p{
+      line-height:1.6;
     }
 
     footer{
@@ -87,6 +109,7 @@
       color:white;
       text-align:center;
       padding:30px;
+      margin-top:40px;
     }
   </style>
 </head>
@@ -96,45 +119,103 @@
   <header>
     <div class="hero">
       <h1>AgroTech Brasil 🌱</h1>
-      <p>Tecnologia e inovação para o agronegócio</p>
-      <a href="#servicos" class="btn">Conheça Mais</a>
+      <p>
+        Tecnologia, inovação e sustentabilidade para o agronegócio moderno.
+      </p>
+
+      <a href="#servicos" class="btn">Explorar Serviços</a>
     </div>
   </header>
 
   <section id="servicos">
-    <h2>Nosso Trabalho</h2>
+
+    <h2>Áreas do Agronegócio</h2>
 
     <div class="cards">
 
       <div class="card">
-        <h3>🌾 Agricultura Inteligente</h3>
-        <p>Monitoramento de plantações com tecnologia moderna.</p>
+        <a href="https://www.embrapa.br" target="_blank">
+          <h3>🌾 Agricultura Inteligente</h3>
+        </a>
+
+        <p>
+          Saiba mais sobre tecnologias agrícolas modernas,
+          monitoramento de plantações e produção sustentável.
+        </p>
       </div>
 
       <div class="card">
-        <h3>🚜 Máquinas Agrícolas</h3>
-        <p>Equipamentos eficientes para aumentar a produtividade.</p>
+        <a href="https://www.deere.com.br" target="_blank">
+          <h3>🚜 Máquinas Agrícolas</h3>
+        </a>
+
+        <p>
+          Conheça tratores, colheitadeiras e equipamentos
+          avançados para aumentar a produtividade no campo.
+        </p>
       </div>
 
       <div class="card">
-        <h3>💧 Irrigação</h3>
-        <p>Sistemas inteligentes para economia de água.</p>
+        <a href="https://www.rainbird.com" target="_blank">
+          <h3>💧 Irrigação Inteligente</h3>
+        </a>
+
+        <p>
+          Descubra sistemas modernos de irrigação
+          para economizar água e melhorar a produção.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="https://www.climatempo.com.br" target="_blank">
+          <h3>☀️ Clima e Previsão</h3>
+        </a>
+
+        <p>
+          Acompanhe o clima e veja previsões importantes
+          para o planejamento agrícola.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="https://www.senar.org.br" target="_blank">
+          <h3>📚 Cursos do Agro</h3>
+        </a>
+
+        <p>
+          Aprenda sobre agronegócio, manejo,
+          sustentabilidade e inovação rural.
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="https://www.agrolink.com.br" target="_blank">
+          <h3>📰 Notícias do Agro</h3>
+        </a>
+
+        <p>
+          Fique atualizado com notícias,
+          mercado agrícola e tendências do setor.
+        </p>
       </div>
 
     </div>
   </section>
 
   <section>
-    <h2>Sobre Nós</h2>
-    <br>
-    <p>
-      A AgroTech Brasil busca unir inovação e sustentabilidade no campo,
-      ajudando produtores rurais a crescer com tecnologia.
+
+    <h2>Sobre a AgroTech</h2>
+
+    <p style="text-align:center; max-width:800px; margin:auto; line-height:1.8;">
+      A AgroTech Brasil conecta produtores rurais às tecnologias mais modernas
+      do agronegócio, trazendo inovação, eficiência e sustentabilidade
+      para o campo brasileiro.
     </p>
+
   </section>
 
   <footer>
-    <p>© 2026 AgroTech Brasil - Todos os direitos reservados</p>
+    <p>© 2026 AgroTech Brasil 🌱</p>
   </footer>
 
 </body>
